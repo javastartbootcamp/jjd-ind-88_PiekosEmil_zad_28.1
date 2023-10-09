@@ -1,0 +1,59 @@
+# Ogłoszex
+
+###
+# @name GET api/offers
+GET localhost:8080/api/offers
+
+###
+# @name GET api/offers/count
+GET localhost:8080/api/offers/count
+
+###
+# @name GET api/offers?title=tele
+GET localhost:8080/api/offers?
+    title=tele
+
+###
+# @name GET api/categories/names
+GET localhost:8080/api/categories/names
+
+###
+# @name POST api/offers
+POST localhost:8080/api/offers
+Content-Type: application/json
+
+{
+  "title": "Telewizor4",
+  "description": "Super telewizor o przekątnej 55 cali",
+  "imgUrl": "http://blabla2.jpg",
+  "price": 1299,
+  "category": "Elektronika"
+}
+
+###
+# @name GET api/categories
+GET localhost:8080/api/categories
+
+###
+# @name GET api/offers/1
+GET localhost:8080/api/offers/1
+
+###
+# @name POST api/categories
+POST localhost:8080/api/categories
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "abc",
+  "description": "Coś dla każdego",
+  "offers": 3
+}
+
+###
+# @name DELETE api/offers/1
+DELETE localhost:8080/api/offers/1
+
+###
+# @name DELETE api/categories/2
+DELETE localhost:i8080/api/categories/2
