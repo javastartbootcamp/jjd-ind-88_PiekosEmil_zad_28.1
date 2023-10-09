@@ -114,7 +114,7 @@ public class RestOffersApplicationTests {
     @DisplayName("GET: /api/categories")
     void shouldGetCategories() {
         final String url = "/api/categories";
-        final List<String> expectedObjectProperties = Arrays.asList("id",
+        final List<String> expectedObjectProperties = Arrays.asList(
                 "name",
                 "description",
                 "offers"
